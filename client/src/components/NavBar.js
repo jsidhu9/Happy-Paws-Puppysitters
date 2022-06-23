@@ -17,7 +17,7 @@ function NavBar({ setIsAuthenticated, setUser, user }) {
         <NavLink
         to="/"
         exact
-        className="ui center floated button"
+        className="ui-center-floated-button"
         activeStyle={{
           background: "#E6E6E8",
         }}
@@ -28,7 +28,7 @@ function NavBar({ setIsAuthenticated, setUser, user }) {
       <NavLink
         to="/calendar"
         exact
-        className="ui center floated button"
+        className="ui-center-floated-button"
         activeStyle={{
           background: "#E6E6E8",
         }}
@@ -39,7 +39,7 @@ function NavBar({ setIsAuthenticated, setUser, user }) {
       <NavLink
         to="/appointmentdetails"
         exact
-        className="ui center floated button"
+        className="ui-center-floated-button"
         activeStyle={{
           background: "#E6E6E8",
         }}
@@ -50,7 +50,7 @@ function NavBar({ setIsAuthenticated, setUser, user }) {
       <NavLink
         to="/pets"
         exact
-        className="ui center floated button"
+        className="ui-center-floated-button"
         activeStyle={{
           background: "#E6E6E8",
         }}
@@ -61,7 +61,7 @@ function NavBar({ setIsAuthenticated, setUser, user }) {
       {user&&user.admin?<NavLink
         to="/profiles"
         exact
-        className="ui center floated button"
+        className="ui-center-floated-button"
         activeStyle={{
           background: "#E6E6E8",
         }}
@@ -69,7 +69,7 @@ function NavBar({ setIsAuthenticated, setUser, user }) {
         All User Profiles
       </NavLink>:null}
 
-      <button className="ui center floated button" onClick={()=>logout()}>Logout</button>
+      <button className="ui-center-floated-button" onClick={()=>logout()}>Logout</button>
 
     </div>
   )
